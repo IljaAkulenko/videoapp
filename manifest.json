@@ -1,17 +1,15 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
 
-  "name": "TV3Play Embed versioon",
-  "description": "Niisama tore jubin :D",
-  "version": "1.0",
+    "name": "TV3 Play tausta muutuja",
+    "description": "muudab tv3 play mingit asja",
+    "version": "1.0",
 
-  "content_scripts": [
-    {
-      "matches": ["http://tv3play.tv3.ee/*","http://www.tv3play.tv3.ee/*"],
-      "js": ["content.js"]
-    }
-  ],
-  "permissions": [
-    "activeTab"
-  ]
+    "content_scripts": [{
+        "matches": ["https://*tv3.ee/*"],
+        "js": ["content.js"]
+    }],
+    "permissions": [
+        "activeTab"
+    ]
 }
